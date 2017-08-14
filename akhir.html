@@ -39,11 +39,22 @@
          margin: 0 auto;
          width: 10%;
          height: auto;
+         padding: 0;
         }
         .field-container {
+            position: relative;
             margin: 0 auto;
-            margin-left: 50px; 
+            width: 600px;
+            height: 40px;
+            border: 0;
             display: inline-block;
+            padding-left: 30px;
+        }
+       .field {
+            width: 80%;
+            height: 80%;
+            border: 1px solid #C8ADC0;
+            z-index: 1;
         }
         .field-container input {
             box-shadow: 2px 2px 2px #7765E3;
@@ -54,11 +65,17 @@
             font-weight: 400;
             margin: 0;
             padding: 0 10px;
-            
         }
         .field-container input:focus {
-            
+            border-color: #C8ADC0;
             box-shadow: 0 0 5px rgba(0, 255, 0,.2), inset 0 0 5px rgba(0, 255, .1), 0 2px 0 #000;
+        }
+        .search-button {
+            float: right;
+            width: 10%;
+            height: 80%;
+            margin-left: 0;
+            padding: 0;
         }
         /* responsive */
         @media screen and (max-width:677px){
@@ -94,10 +111,8 @@
                 <img src="dummy-logo.png" alt="" class="logo" >
             <fieldset class="field-container">
                 <input type="text" name="" value="" class="field" placeholder="Search...">
-                <button type=""><i class="fa fa-search" aria-hidden="true"></i></button>
-            </fieldset>
-    
-                
+                <button class="search-button" type=""><i class="fa fa-search" aria-hidden="true"></i>
+            </fieldset>  
         </div>
     </nav>
     <div class="container">
